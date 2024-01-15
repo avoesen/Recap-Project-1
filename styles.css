@@ -94,7 +94,7 @@ header {
     height: 40px;
 }
 .nav:hover {
-    fill: rgb(94, 119, 129);
+    fill: lightgrey;
 }
 
 .profile-pic {
