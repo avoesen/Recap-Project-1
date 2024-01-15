@@ -17,18 +17,22 @@ header {
     border: 2px solid black;
     position: relative;
     height: 180px;
+    border-radius: 8px;
 }
 .bookmark {
     position: absolute;
     top: -20px;
     right: 20px;
-    height: 40px;
+    height: 50px;
     background: none;
     border: none;
     padding: 0;
-    outline: none; 
+    outline: none;
+    cursor: pointer; 
 }
-
+.bookmark :hover {
+    fill: rgb(94, 119, 129);
+}
 #answer {
     font-size: large;
     background-color: white;
@@ -75,5 +79,23 @@ header {
     height: 40px;
 }
 .nav:hover {
-    background-color: rgb(94, 119, 129);
+    fill: rgb(94, 119, 129);
+}
+
+.profile-pic {
+    width:30%;
+    border-radius: 200px;
+}
+
+.first-part {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+ul {
+    text-align: left;
+}
+li {
+    font-size: 15px;
+    font-weight: bold;
 }
