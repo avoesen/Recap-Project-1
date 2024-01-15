@@ -19,11 +19,11 @@ header {
 }
 .bookmark {
     position: absolute;
-    top: -40px;
+    top: -20px;
     right: 20px;
     border: none;
-    background: none;
     font-size: 15px;
+    height: 40px;
 }
 
 .answer {
@@ -55,15 +55,16 @@ header {
     margin-left: 0;
     margin-bottom: 0;
     margin-right: 0;  
-    height: 40px;
-    position: fixed;
+    position: fix;
     bottom: 0;
     width: 100%;
     border-top: 2px solid black;
     background-color: white;
+    position: relative;
 }
 .nav {
     padding: 10px;
+    height: 40px;
 }
 .nav:hover {
     background-color: rgb(94, 119, 129);
