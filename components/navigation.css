@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;  
+    position: fix;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    background-color: white;
+    position: fixed;
+}
+.nav {
+    padding: 10px;
+    height: 40px;
+}
+.nav:hover {
+    fill: lightgrey;
+}
