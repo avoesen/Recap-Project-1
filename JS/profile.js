@@ -1,5 +1,4 @@
 const bodyElement = document.querySelector('[data-js="body"]');
-console.log(bodyElement)
 
 const darkSwitch = document.querySelector('.switch input')
 

@@ -3,8 +3,10 @@
  const answerBtn = document.querySelector("#answer")
  const answerText = document.querySelector("#answer-text") 
  const bookmarkEl = document.querySelector("#bookmark") 
+
+ const questionCard = document.querySelector(".question-card")
  
- console.log(answerText)
+ console.log(questionCard)
 
  answerBtn.addEventListener('click', () => {
     if (answerBtn.textContent === "Show Answer"){
@@ -18,6 +20,9 @@
 
 //bookmark in anderes html speichern??
 bookmarkEl.addEventListener('click', () => {
-    bookmarkEl.style.fill = "black"
+    bookmarkEl.style.fill = "black";
+    //mit local storage? geht auch mit addclass??
+    localStorage.setItem("questionCardSave", questionCard.outerHTML) 
 })
+
 
