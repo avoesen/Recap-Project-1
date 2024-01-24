@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(/components/button.css);
 @import url(/components/card.css);
 @import url(/components/header.css);
@@ -130,3 +131,5 @@ li {
   input:checked + .slider:before {
     transform: translateX(18px);
   }
+=======
+>>>>>>> main
