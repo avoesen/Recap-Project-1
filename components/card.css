@@ -1,0 +1,42 @@
+.question-card {
+    background-color: var(--var-color-background);
+    width: 500px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+}
+.bookmark {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    height: 50px;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer; 
+}
+.bookmark :hover {
+    fill: rgb(94, 119, 129);
+}
+.bookmark {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    height: 50px;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer; 
+}
+.bookmark :hover {
+    fill: rgb(94, 119, 129);
+}
