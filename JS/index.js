@@ -25,7 +25,7 @@ const bookmarkEl = document.querySelector(".bookmark");
 bookmarkEls.forEach((bookmark) => {
   bookmark.addEventListener("click", () => {
     bookmark.style.fill = "black";
-    //mit local storage? geht auch mit addclass?? wird überschrieben
+    //mit local storage? geht auch mit addclass?? wird überschrieben? wie kann man random namen erstellen? damit die nicht überschrieben werden?
     localStorage.setItem("questionCardSave", questionCard.outerHTML);
   });
 });

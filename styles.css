@@ -24,6 +24,8 @@ body {
   justify-content: center;
   position: relative;
 }
+
+/* add media query dark-mode? */
 .dark {
   background-color: rgb(142, 142, 142);
   color: white;
