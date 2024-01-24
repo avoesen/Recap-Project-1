@@ -1,0 +1,25 @@
+.add-question-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-basis: 100%;
+}
+.add-question-form textarea, .add-question-form input {
+    height: 20vw;
+    flex-basis: 1;
+    width: 90vw;
+}
+.add-question-form label {
+    margin-top: 20px;
+}
+.add-question-form button {
+    align-self: center;
+    justify-self: center;
+    margin-top: 40px; 
+    border: 2px solid black; 
+    background-color: white;
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px var(--var-color-background);
+    
+}
