@@ -6,8 +6,9 @@
 
 
 :root {
-  --var-color-hover: lightgrey;
+  --var-color-hover: rgb(168, 212, 230);
   --var-color-background: rgb(168, 212, 230);
+  --var-volor-border: black; 
 
 }
 

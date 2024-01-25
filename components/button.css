@@ -1,0 +1,10 @@
+.refresh-button {
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.refresh-button:hover path {
+   fill: var(--var-color-hover);
+}

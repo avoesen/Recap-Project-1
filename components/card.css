@@ -24,19 +24,5 @@
     cursor: pointer; 
 }
 .bookmark :hover {
-    fill: rgb(94, 119, 129);
-}
-.bookmark {
-    position: absolute;
-    top: -20px;
-    right: 20px;
-    height: 50px;
-    background: none;
-    border: none;
-    padding: 0;
-    outline: none;
-    cursor: pointer; 
-}
-.bookmark :hover {
-    fill: rgb(94, 119, 129);
+    fill: var(--var-color-hover);
 }
