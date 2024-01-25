@@ -1,9 +1,22 @@
-.refresh-button {
+@media screen and (min-width: 1200px) {
+    .refresh-button {
     background-color: white;
     border: none;
+    margin-right: 3rem;
+    /* position: absolute;
+    right: 30px;
+    top: 20px; */
+    } 
+}
+@media screen and (min-width: 600px) {
+    .refresh-button {
+    background-color: white;
+    border: none;
+    margin-right: 3rem;
     position: absolute;
     right: 30px;
     top: 20px;
+    } 
 }
 .refresh-button:hover path {
    fill: var(--var-color-hover);
