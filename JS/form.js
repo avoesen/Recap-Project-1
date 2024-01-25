@@ -26,10 +26,12 @@ formQuestion.addEventListener("submit", (event) => {
                 <a class="tag">#flexbox</a>
             </div>
       `;
+    const newQuestionText = document.createElement("p");
+    append(newQuestionText)
+
   // keine ahnung wie ich das einem anderen html zuordnen kann
   console.log(newQuestion)
   localStorage.setItem("newQuestionCard", newQuestion.outerHTML);
-  console.log("yes");
 
   // const bodyIndexHTML = document.querySelector("[data-js='body-index']");
   // console.log(bodyIndexHTML);

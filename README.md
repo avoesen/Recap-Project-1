@@ -1,6 +1,6 @@
 # Recap-Project-1
 
-1. filling nav3 funktioniert nicht 
+1. filling nav3 funktioniert nicht. fill methoden svg recherchieren
 2. refreshbutton in index.html zieht immer das gleiche Element
     - random Benennung für localstorage funktioniert wie?
     - wenn neue Card angehangen wird, wird die Position geändert (über nav-bar), warum?

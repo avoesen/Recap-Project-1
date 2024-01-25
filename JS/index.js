@@ -6,7 +6,7 @@
 const questionCards = document.querySelectorAll(".question-card");
 const questionCard = document.querySelector(".question-card");
 
-answerBtns.forEach(function(answerBtn) {
+answerBtns.forEach((answerBtn) => {
     answerBtn.addEventListener("click", () => {
       if (answerBtn.textContent === "Show Answer") {
         answerBtn.textContent = "Hide Answer";
@@ -21,17 +21,21 @@ answerBtns.forEach(function(answerBtn) {
 const bookmarkEls = document.querySelectorAll(".bookmark"); 
 const bookmarkEl = document.querySelector(".bookmark");
 
-//bookmark in anderes html speichern??
-bookmarkEls.forEach((bookmark) => {
+console.log(bookmarkEls)
+ 
+bookmarkEls.forEach((bookmark, index) => {
   bookmark.addEventListener("click", () => {
-    bookmark.style.fill = "black";
+    if (bookmark.style.fill === "black"){
+      bookmark.style.fill = "white";
+    } else {
+      bookmark.style.fill = "black";
+    }
     //mit local storage? geht auch mit addclass?? wird überschrieben? wie kann man random namen erstellen? damit die nicht überschrieben werden?
-    localStorage.setItem("questionCardSave", questionCard.outerHTML);
+    localStorage.setItem("questionCardSave"+ index, questionCard.outerHTML);
   });
 });
 
 const refreshButton = document.querySelector("[data-js='refresh']");
-console.log(refreshButton)
 
 refreshButton.addEventListener("click", () => {
   const appendQuestionCard = localStorage.getItem("newQuestionCard");

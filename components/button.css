@@ -15,3 +15,7 @@
 .refresh-button:hover path {
    fill: var(--var-color-hover);
 }
+.svg-button {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
