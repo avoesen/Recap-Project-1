@@ -29,3 +29,13 @@ bookmarkEls.forEach((bookmark) => {
     localStorage.setItem("questionCardSave", questionCard.outerHTML);
   });
 });
+
+const refreshButton = document.querySelector("[data-js='refresh']");
+console.log(refreshButton)
+
+refreshButton.addEventListener("click", () => {
+  const appendQuestionCard = localStorage.getItem("newQuestionCard");
+  const bodyIndexHTML = document.querySelector("[data-js='body-index']");
+  bodyIndexHTML.insertAdjacentHTML('beforeend', appendQuestionCard);
+  console.log("ok");
+});
