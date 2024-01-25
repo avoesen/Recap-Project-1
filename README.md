@@ -1,5 +1,4 @@
 # Recap-Project-1
-todo
 
 1.filling nav3 funktioniert nicht 
 2.refreshbutton in index.html zieht immer das gleiche Element
