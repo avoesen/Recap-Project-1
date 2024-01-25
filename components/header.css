@@ -7,7 +7,7 @@
         background-color: white;
         display: flex;
         justify-content: space-between;
-        height: 4rem;
+        height: 5rem;
         align-items: center;
         }
     header h1 {
@@ -18,11 +18,19 @@
 @media screen and (min-width: 600px) {
     header {
     border-bottom: 2px solid black;
+    background-color: white;
     position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
     color: black;
     height: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
     }
+     header h1 {
+        flex-grow: 2;
+        margin-left: 60px;
+    }  
 }

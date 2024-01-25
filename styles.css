@@ -3,6 +3,7 @@
 @import url(/components/header.css);
 @import url(/components/navigation.css);
 @import url(/components/question-form.css);
+@import url(/components/profile.css);
 
 :root {
   --var-color-hover: rgb(168, 212, 230);
@@ -21,7 +22,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   text-align: center; 
-  
 }
 
 @media screen and (min-width: 1200px) {
@@ -32,21 +32,25 @@ body {
     flex-direction: column;
     align-content: center;
     background-color: var(--var-color-2);
+    position: relative;
     /* border: 2px solid var(--var-color-border); */
     }
-  header, section .question-card, footer .navbar {
+  header, main, footer .navbar {
     width: 600px;
     margin-right:;
     border-right: 2px solid black; 
+    border-left: 2px solid black;
+  }
+  main {
+    background-color: white;
   }
 }
 @media screen and (min-width: 600px) {
   body {
     margin: 0; 
     padding-bottom: 70px;
-    padding-top: 20px;
     /* bottom: 50px; */
-    top: 5rem;
+    top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,100 +66,7 @@ body {
   border-color: white;
   }
 
-.answer {
-  font-size: large;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 6px;
-  margin-bottom: 10px;
-  outline: none;
-}
-.answer-text {
-  display: none;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.tags {
-  position: absolute;
-  left: 0;
-  bottom:5px;
-  display: flex;
-  justify-content: space-around;
-}
-.tag {
-  background-color: white;
-  margin-left: 5px;
-  border: 1px solid black;
-  border-radius: 2px;
-}
-
-.profile-pic {
-  width:30%;
-  border-radius: 200px;
-}
-
-.first-part {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.profile-inhalt {
-  text-align: left;
-  list-style: none;
-  margin-left: 20px;
-}
-.dark-mode {
-  display: flex;
-  align-items: center;
-}
-
-li {
-  font-size: 15px;
-  font-weight: bold;
-}
-.switch {
-  position: relative;
-  left: 10px;
-  width: 40px; 
-  height: 20px; 
-}
-  
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 20px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 12px;
-    width: 12px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color:  var(--);
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(18px);
+  .dark-mode {
+    display: flex;
+    align-items: center;
   }

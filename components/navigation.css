@@ -1,33 +1,43 @@
 @media screen and (min-width: 1200px) {
    footer {
     flex-basis: 50vw;
+    position: relative;
    }
     .navbar {
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    align-items: center; */
-    /* margin: 0;  
+    align-items: center;
+    margin: 0;  
     background-color: white;
-    position: fixed;
-    bottom: 0; */
+    /* position: fixed;
+    bottom: 0;
+    right:0; */
+    /* left: calc((100%-600px)/2); */
+    }
+    .nav {
+        padding: 10px;
+        height: 5rem;
     }
 } 
 
 @media screen and (min-width: 600px) {
     .navbar {
         display: flex;
-        
+        box-sizing: content-box;
         justify-content: space-around;
         align-items: center;
         margin: 0;  
         border-top: 2px solid black;
         background-color: white;
+        width:100%;
+        z-index: 100;
         position: fixed;
         bottom: 0;
+        left:0;
     }
     .nav {
         padding: 10px;
-        height: 40px;
+        height: 4rem;
     }
 }
 .nav:hover {
