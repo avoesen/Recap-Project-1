@@ -11,11 +11,25 @@
         </header>
         <form class="add-question-form" data-js="form">
             <label for="question">Your Question:</label>
-            <textarea id="question" name="question" class=""></textarea>
+            <textarea 
+                id="question" 
+                name="question" 
+                data-js="question-input" 
+                placeholder="enter your question" 
+                maxlength="150">
+            </textarea>
+            <small><span data-js="characters-left-q"></span></small>
             <label for="answer">Your Answer:</label>
-            <textarea id="answer" name="answer"></textarea>
+            <textarea 
+                id="answer" 
+                name="answer" 
+                data-js="answer-input" 
+                placeholder="enter the answer" 
+                maxlength="150">
+            </textarea>
+            <small><span data-js="characters-left-a"> characters left</span></small>
             <label for="tag">Tag:</label>
-            <input id="tag" name="tag"/>
+            <input id="tag" name="tag" placeholder="#..."/>
             <button type="submit" data-js="submit-button">Submit</button>
         </form>
     </body>

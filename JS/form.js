@@ -36,3 +36,31 @@ formQuestion.addEventListener("submit", (event) => {
   // bodyIndexHTML.append(newQuestion);
   // document.body.append(newQuestion);
 });
+
+// mit querySelctorAll beide spans als array 
+
+//Question
+const questionInput = document.querySelector('[data-js="question-input"]');
+const questionCharacters = document.querySelector('[data-js="characters-left-q"]');
+const maxLengthQuestion =  questionInput.getAttribute("maxlength");
+
+const updateQuestion = (value) => {
+    questionCharacters.innerText = value + " characters left";
+};
+updateQuestion(maxLengthQuestion)
+questionInput.addEventListener("input", () =>{
+    updateQuestion(maxLengthQuestion - questionInput.value.length);
+})
+//Answer
+const answerInput = document.querySelector('[data-js="answer-input"]');
+const answerCharacters = document.querySelector('[data-js="characters-left-a"]');
+const maxLengthAnswer =  answerInput.getAttribute("maxlength");
+
+// console.log(answerInput, answerCharacters, maxLengthAnswer)
+const updateAnswer = (value) => {
+    answerCharacters.innerText = value + " characters left";
+};
+updateAnswer(maxLengthAnswer);
+answerInput.addEventListener("input", () =>{
+    updateAnswer(maxLengthAnswer - answerInput.value.length);
+})

@@ -9,6 +9,8 @@
     height: 20vw;
     flex-basis: 1;
     width: 90vw;
+    color: var(--var-color-background); 
+    padding: 10px;
 }
 .add-question-form label {
     margin-top: 20px;
@@ -21,5 +23,9 @@
     background-color: white;
     font-size: large;
     box-shadow: 2px 2px 2px 2px var(--var-color-background);
-    
+}
+.add-question-form input {
+  height: 5vw;
+  padding-top: 10px;
+  line-height: normal; /*bringt gar nichts*/
 }
